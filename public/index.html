@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <base href="/">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AngularJS CRUD</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+
+  <!-- update the version number as needed -->
+  <!-- <script defer src="/__/firebase/5.8.6/firebase-app.js"></script> -->
+  <!-- include only the Firebase features as you need -->
+  <!-- <script defer src="/__/firebase/5.8.6/firebase-auth.js"></script> -->
+  <!-- <script defer src="/__/firebase/5.8.6/firebase-database.js"></script> -->
+  <!-- <script defer src="/__/firebase/5.8.6/firebase-messaging.js"></script> -->
+  <!-- <script defer src="/__/firebase/5.8.6/firebase-storage.js"></script> -->
+  <!-- initialize the SDK after all desired features are loaded -->
+  <!-- <script defer src="/__/firebase/init.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.11/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular-route.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+  <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+
+  <script src="app.js"></script>
+</head>
+
+<body ng-app="myApp">
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">CRUD</a>
+        <ul id="nav-mobile" class="right">
+          <li><a ng-href="/add">Add</a></li>
+          <li><a ng-href="/admin">Admin</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <ng-view></ng-view>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+      // // The Firebase SDK is initialized and available here!
+      //
+      // firebase.auth().onAuthStateChanged(user => { });
+      // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+      // firebase.messaging().requestPermission().then(() => { });
+      // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+      //
+      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+      // try {
+      //   let app = firebase.app();
+      //   let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+      //   document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+      // } catch (e) {
+      //   console.error(e);
+      //   document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+      // }
+    });
+  </script>
+</body>
+
+</html>
